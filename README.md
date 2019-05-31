@@ -1,5 +1,5 @@
 # MachineLearning
-A few learning problems for machine learning using built in datasets in scikit learn
+A few learning problems for machine learning using built in datasets in scikit learn. [Video Presentation by Jake VanderPlas]( https://youtu.be/HC0J_SPm9co "PyData Tutorial")
 
 # Enviorment
 anaconda 5.2.0
