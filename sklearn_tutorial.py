@@ -26,7 +26,7 @@ plt.clim(-0.5, 2.5)
 plt.xlabel(iris.feature_names[x_index])
 plt.ylabel(iris.feature_names[y_index])
 plt.show()
-
+"""Program stops here until pop-up window is closed."""
 
 # Machine Learning Problem Insight
 # selecting a learning problem
@@ -47,6 +47,7 @@ plt.yticks(np.arange(0, (y.max() / 5 + 1) * 5, 5))
 plt.xticks(np.arange(0, 11, 1))
 plt.grid(False)
 plt.show()
+"""Program stops here until pop-up window is closed."""
 
 # Format Data For Model
 # all models need a 2D array to fit it to data
@@ -79,5 +80,7 @@ knn.fit(X, y)
 # What kind of iris has 3cm x 5cm sepal and 4cm x 2cm petal?
 # call the predict method
 result = knn.predict([[3, 5, 4, 2],])
-
 print(iris.target_names[result])
+
+# probability of choice
+print(knn.predict_proba([[3, 5, 4, 2],]))
