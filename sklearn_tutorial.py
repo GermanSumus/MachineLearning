@@ -48,7 +48,7 @@ plt.xticks(np.arange(0, 11, 1))
 plt.grid(False)
 plt.show()
 
-# Format Data For Sklearn
+# Format Data For Model
 # np.newaxis will increase the dimension of the array by 1
 X = x[:, np.newaxis]
 print(X)
