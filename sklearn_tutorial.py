@@ -57,7 +57,7 @@ print(X)
 print(y)
 
 # fit the model
-print(model.fit(X, y))
+model.fit(X, y)
 
 # now it has additional attributes which can calculate predictions
 # attributes with a '_' indicate a fit parameter
