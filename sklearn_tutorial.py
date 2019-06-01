@@ -28,7 +28,7 @@ plt.ylabel(iris.feature_names[y_index])
 plt.show()
 
 
-# Machine Learning Example
+# Machine Learning Problem Insight
 # selecting a learning problem
 from sklearn.linear_model import LinearRegression
 
@@ -49,13 +49,35 @@ plt.grid(False)
 plt.show()
 
 # Format Data For Model
+# all models need a 2D array to fit it to data
+# the expected outcome of our data is in a 1D array
 # np.newaxis will increase the dimension of the array by 1
 X = x[:, np.newaxis]
 print(X)
 print(y)
+
+# fit the model
 print(model.fit(X, y))
 
-# Attributes ending with a '_' indicate a fit parameter
+# now it has additional attributes which can calculate predictions
+# attributes with a '_' indicate a fit parameter
 print(model.coef_)
 print(model.intercept_)
 print(model._residues)
+
+# Applying a Learning Problem to Iris Dataset
+from sklearn.neighbors import KNeighborsClassifier
+
+X, y = iris.data, iris.target
+
+# create the model
+knn = KNeighborsClassifier(n_neighbors=5)
+
+# fit the model
+knn.fit(X, y)
+
+# What kind of iris has 3cm x 5cm sepal and 4cm x 2cm petal?
+# call the predict method
+result = knn.predict([[3, 5, 4, 2],])
+
+print(iris.target_names[result])
