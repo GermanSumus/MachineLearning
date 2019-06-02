@@ -1,10 +1,8 @@
-import seaborn
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.datasets import load_iris
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor
-seaborn.set()
 
 # More Complex Data
 np.random.seed(0)
