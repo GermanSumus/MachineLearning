@@ -1,6 +1,6 @@
 # MachineLearning
 A few learning problems for machine learning using built in datasets in scikit-learn. [Video Presentation by Jake VanderPlas]( https://youtu.be/HC0J_SPm9co "PyData Tutorial")  
-Built TensorFlow from source following the instuction [here]("https://github.com/lakshayg/tensorflow-build").  
+Built TensorFlow from source following the instuction [here](https://github.com/lakshayg/tensorflow-build).  
 
 # Enviorment
 numpy 1.14.3  
