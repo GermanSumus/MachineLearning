@@ -4,7 +4,7 @@ Built TensorFlow from source following the instuction [here](https://github.com/
 
 # Enviorment
 numpy 1.14.3  
-python 3.6.5  
+python 3.7.0  
 matplotlib 2.2.2  
 scikit-learn 0.19.1  
 tensorflow 1.12.0  
